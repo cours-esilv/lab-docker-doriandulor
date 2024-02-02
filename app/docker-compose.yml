@@ -1,0 +1,20 @@
+version: '3'
+services:
+  my-service:
+    image: doriandulor1/flask-project
+    ports:
+     - "5000:5000"
+    environment:
+      - SOME_ENV_VARIABLE=value
+
+  my-front-service:
+    image: doriandulor1/my-nginx-app  
+    ports:
+      - "8080:80"  
+    environment:
+      - WS_BACK_URL=http://my-back-service:5000
+    volumes:
+      - my-back-data:/app/data  
+
+volumes:
+  my-back-data:

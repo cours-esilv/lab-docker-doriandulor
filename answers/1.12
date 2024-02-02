@@ -1,0 +1,7 @@
+docker ps
+
+CONTAINER ID   IMAGE                        COMMAND                  CREATED          STATUS          PORTS                                       NAMES
+653e805a3cd4   my-nginx-app                 "/docker-entrypoint.…"   15 minutes ago   Up 15 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp       epic_poincare
+685307f42587   doriandulor1/flask-project   "python -m flask run…"   31 minutes ago   Up 31 minutes   0.0.0.0:5000->5000/tcp, :::5000->5000/tcp   dorian_con
+
+The two containers are already launched together

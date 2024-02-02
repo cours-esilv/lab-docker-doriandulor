@@ -1,0 +1,5 @@
+docker stop dorian_con epic_poincare
+
+docker image rm doriandulor1/flask-project
+
+docker image rm doriandulor1/my-nginx-app

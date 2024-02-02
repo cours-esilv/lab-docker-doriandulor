@@ -1,0 +1,8 @@
+docker exec -it dorian_con /bin/bash
+
+cat /etc/*release
+
+OS name : Debian GNU/Linux
+OS version : 12
+
+exit
